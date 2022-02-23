@@ -1970,6 +1970,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Header"
 });
@@ -1985,6 +1986,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -2563,7 +2565,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", [_c("h2", [_vm._v("Header")])])
+    return _c("header", [
+      _c("h2", [_vm._v("Header")]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "/admin/home" } }, [_vm._v("Area Riservata")]),
+    ])
   },
 ]
 render._withStripped = true
@@ -2595,6 +2601,8 @@ var render = function () {
       _vm._l(_vm.posts, function (post) {
         return _c("li", { key: post.id }, [
           _c("h3", [_vm._v(_vm._s(post.title))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(post.content))]),
         ])
       }),
       0
